@@ -1,0 +1,16 @@
+# Langchain Config
+location: uksouth
+endpoint: https://oai-aiap-batch15-deepskilling.openai.azure.com/
+
+openai:
+  selector: gpt3.5
+  gpt3.5:
+    model: gpt-3.5-turbo
+    max_tokens: 200
+    temperature: 0.7
+    top_p: 0.3
+
+embedding:
+  selector: embedding-3-small
+  embedding-3-small:
+    model: text-embedding-3-small

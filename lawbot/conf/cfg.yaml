@@ -1,0 +1,4 @@
+hydra:
+  output_subdir: null
+
+save_model_path: models/model_weights.pt
