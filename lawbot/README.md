@@ -22,26 +22,13 @@ Before you begin, ensure you have met the following requirements:
 - [Optional] Virtual Environment
 
 ### Installation
-
-1. Clone the repository to your local machine:
-
-   ```
-   bash
-   git clone https://gitlab.aisingapore.net/aiap/deep-skilling-phase/aiap15/aiap-15-mini-project/jokegen.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```
-   cd jokegen
-   ```
    
-3. Create a virtual environment (recommended):
+1. Create a virtual environment (recommended):
    ```
    python -m venv venv
    source venv/bin/activate
    ```
-4. Running the Backend Development Server (Start the FastAPI development server):
+2. Run the Backend Development Server (Start the FastAPI development server):
 
    Build the backend Docker image:
 
@@ -59,7 +46,7 @@ Before you begin, ensure you have met the following requirements:
     Configure the parameters for each response fields with its specified value.
    <img width="1372" alt="image" src="images/Screenshot 2024-03-11 at 17.03.14 (2).png">
 
-5. Running the Frontend Development Server (Streamlit)
+3. Run the Frontend Development Server (Streamlit)
    ```
    chmod 755 run_frontend.sh
    ./run.sh
