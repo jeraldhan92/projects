@@ -1,31 +1,61 @@
-# Portfolio Projects
+# LawBot Project
 
-Hello! I am Jerald, and welcome to my repository of portfolio projects. You may click each of the subfolders to find out more about my individual projects that reflect my experience and interests.
+Welcome to the LawBot project! The Law Chatbot is a conversational AI application designed to assist users with legal inquiries, providing information, guidance, and answers to common legal questions. Whether users are seeking legal advice or general information, the chatbot aims to facilitate a user-friendly and accessible interface for navigating legal topics.
 
 
-## Projects Listed
+## Table of Contents
 
-- Lawbot
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Authors](#authors)
 
 ## Getting Started
 
-Follow these steps to run my projects locally on your own machine.
+Follow these steps to get the project up and running on your local machine.
 
+### Prerequisites
 
-1. Clone the repository to your local machine:
+Before you begin, ensure you have met the following requirements:
+
+- Python 3.8 installed on your system.
+- [Optional] Virtual Environment
+
+### Installation
+   
+1. Create a virtual environment (recommended):
+   ```
+   python -m venv venv
+   source venv/bin/activate
+   ```
+2. Run the Backend Development Server (Start the FastAPI development server):
+
+   Build the backend Docker image:
 
    ```
    bash
-   git clone https://github.com/jeraldhan92/projects.git
+   docker build --no-cache -t backend:v0 -f backend.DockerFile .
+
+   chmod 755 run_docker_build.sh
+   ./run_docker_build.sh
+
+   chmod 755 run_backend_docker.sh
+   ./run_backend_docker.sh
+   
+    ```
+    Configure the parameters for each response fields with its specified value.
+   <img width="1372" alt="image" src="images/Screenshot 2024-03-11 at 17.03.14 (2).png">
+
+3. Run the Frontend Development Server (Streamlit)
    ```
+   chmod 755 run_frontend.sh
+   ./run.sh
+   ``` 
 
-2. Navigate to the project directory:
-
-   ```
-   cd projects
-   ```
-
-## Contact
-- Email: jeraldhan@gmail.com
-- LinkedIn: https://www.linkedin.com/in/jerald-han-wl/
-
+## Authors
+| **Author**            | **Email** |
+|-------------          |--------------|
+| Low Shi Jer  |  low_shi_jer@aiap.sg   |
+| Wai Jin Hui  |  wai_jin_hui@aiap.sg   |
+| Jerald Han Wang Liang  |  jerald_han_wl@aiap.sg   |
+| Crystal Toh Yi Shan  |  crystal_toh_ys@aiap.sg   |
